@@ -3,14 +3,16 @@ import Link from "next/link";
 import { useState } from "react";
 import CompanyLogo from "@/public/CompanyLogo.png";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [serviceModal, setServiceModal] = useState<boolean>(false);
-
+  const pathname = usePathname();
+  console.log(pathname);
   return (
     <nav className="border-gray-200 bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <Link href="/" className="flex items-center">
+        <Link href="/" className={`flex items-center`}>
           <Image
             src={CompanyLogo.src}
             className="mr-3"
@@ -49,15 +51,25 @@ export default function Navbar() {
             <li>
               <Link
                 href="/"
-                className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                aria-current="page">
+                className="block py-2 pl-3 pr-4 text-white rounded md:bg-transparent  md:p-0 dark:text-white "
+                aria-current="page"
+                style={
+                  pathname === "/"
+                    ? { color: "rgb(59 130 246" }
+                    : { color: "#fff" }
+                }>
                 Home
               </Link>
             </li>
             <li>
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                style={
+                  pathname.includes("about")
+                    ? { color: "rgb(59 130 246" }
+                    : { color: "#fff" }
+                }>
                 About
               </a>
             </li>
@@ -65,6 +77,11 @@ export default function Navbar() {
               <Link
                 href={"/services"}
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                style={
+                  pathname.includes("services")
+                    ? { color: "rgb(59 130 246" }
+                    : { color: "#fff" }
+                }
                 onMouseOver={() => {
                   setServiceModal(true);
                 }}>
@@ -139,15 +156,25 @@ export default function Navbar() {
               ) : null}
             </li>
             <li>
-              <a
+              <Link
                 href="#"
+                style={
+                  pathname.includes("pricing")
+                    ? { color: "rgb(59 130 246" }
+                    : { color: "#fff" }
+                }
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Pricing
-              </a>
+              </Link>
             </li>
             <li>
               <a
                 href="#"
+                style={
+                  pathname.includes("contact")
+                    ? { color: "rgb(59 130 246" }
+                    : { color: "#fff" }
+                }
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Contact
               </a>
