@@ -90,7 +90,7 @@ export default function Navbar() {
               {serviceModal ? (
                 <div
                   className="absolute bg-gray-700 p-4 w-max text-white"
-                  style={{ transform: "translate(-150px, 29px)" }}
+                  style={{ transform: "translate(-250px, 29px)" }}
                   onMouseLeave={() => setServiceModal(false)}>
                   <div className="grid grid-cols-4 gap-6">
                     <div className="">

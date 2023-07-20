@@ -22,8 +22,8 @@ export default function Services() {
           style={{ backdropFilter: "blur(20px)" }}>
           <h2 className=" text-4xl text-white">Financial Accounting</h2>
           <p className="text-white">
-            Boost your business's financial efficiency with Busy Accounting
-            Software's powerful tools, providing quick access to accounting
+            Boost your business&#39;s financial efficiency with Busy Accounting
+            Software&#39;s powerful tools, providing quick access to accounting
             transactions, vouchers, and financial statements
           </p>
         </div>
@@ -55,7 +55,7 @@ export default function Services() {
           <p className="text-white">
             Experience flexibility in reporting with our management software
             that offers offline and online reporting options, allowing you to
-            generate reports on-the-go or when you're back online.
+            generate reports on-the-go or when you&#39;re back online.
           </p>
         </div>
         <div
@@ -63,7 +63,7 @@ export default function Services() {
           style={{ backdropFilter: "blur(20px)" }}>
           <h2 className=" text-4xl text-white">Networking and Hardware</h2>
           <p className="text-white">
-            Whether you're looking for hardware upgrades or network
+            Whether you&#39;re looking for hardware upgrades or network
             optimization, our expert team of technicians provides end-to-end
             solutions to meet your hardware and networking needs.
           </p>

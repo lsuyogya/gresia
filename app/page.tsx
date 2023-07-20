@@ -48,22 +48,23 @@ export default function Home() {
           <p
             className=" pt-24 align-middle text-center flex flex-wrap h-4 gap-12 justify-center"
             style={{ marginLeft: "-2rem" }}>
-            The management software's robust reporting and analytics
+            The management software&#39;s robust reporting and analytics
             capabilities provided us with detailed insights into our financial
             performance, enabling us to quickly identify areas for improvement
             and take proactive steps to optimize our operations and increase
-            profitability. The management software's robust reporting and
+            profitability. The management software&#39;s robust reporting and
             analytics capabilities provided us with detailed insights into our
             financial performance, enabling us to quickly identify areas for
             improvement and take proactive steps to optimize our operations and
-            increase profitability. The management software's robust reporting
-            and analytics capabilities provided us with detailed insights into
-            our financial performance, enabling us to quickly identify areas for
-            improvement and take proactive steps to optimize our operations and
-            increase profitability. The management software's robust reporting
-            and analytics capabilities provided us with detailed insights into
-            our financial performance, enabling us to quickly identify areas for
-            improvement and take proactive steps.
+            increase profitability. The management software&#39;s robust
+            reporting and analytics capabilities provided us with detailed
+            insights into our financial performance, enabling us to quickly
+            identify areas for improvement and take proactive steps to optimize
+            our operations and increase profitability. The management
+            software&#39;s robust reporting and analytics capabilities provided
+            us with detailed insights into our financial performance, enabling
+            us to quickly identify areas for improvement and take proactive
+            steps.
             <button className=" bg-green-500 w-48 p-2 rounded text-white span col-start-2  ">
               Read More About Us
             </button>
