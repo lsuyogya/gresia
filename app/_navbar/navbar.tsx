@@ -1,19 +1,23 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import CompanyLogo from "@/public/CompanyLogo.png";
+import Image from "next/image";
 
 export default function Navbar() {
   const [serviceModal, setServiceModal] = useState<boolean>(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="border-gray-200 bg-gray-900">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center">
-          {/* <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
+          <Image
+            src={CompanyLogo.src}
+            className="mr-3"
             alt="Logo"
-          /> */}
+            width={50}
+            height={50}
+          />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Gracia Business Group
           </span>
@@ -68,8 +72,8 @@ export default function Navbar() {
               </Link>
               {serviceModal ? (
                 <div
-                  className="absolute bg-white p-4 w-max"
-                  style={{ transform: "translate(-150px, 20px)" }}
+                  className="absolute bg-gray-700 p-4 w-max text-white"
+                  style={{ transform: "translate(-150px, 29px)" }}
                   onMouseLeave={() => setServiceModal(false)}>
                   <div className="grid grid-cols-4 gap-6">
                     <div className="">

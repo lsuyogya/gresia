@@ -31,7 +31,7 @@ export default function Home() {
             //   color: "white",
             // }}
 
-            className="text-[#198754] text-yellow-300">
+            className="text-[#198754] text-green-500">
             Warm{" "}
           </span>
           Hands
