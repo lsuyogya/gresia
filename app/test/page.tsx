@@ -8,7 +8,7 @@ export default function PDF() {
   const getBase64StringFromDataURL = (dataURL: any) =>
     dataURL.replace("data:", "").replace(/^.+,/, "");
   const invoiceTableHeaders = [
-    "No",
+    "S.No.",
     "Description",
     "Quantity",
     "Price",
@@ -115,6 +115,12 @@ export default function PDF() {
 
   const y3 = streetAddressY + streetAddressYInterval * 2 + 15;
   autoTable(doc, {
+    columnStyles: {
+      // 0: { halign: "center" },
+      // 2: { halign: "center" },
+      3: { halign: "right" },
+      4: { halign: "right" },
+    },
     head: [invoiceTableHeaders],
     body: body,
     startY: y3,

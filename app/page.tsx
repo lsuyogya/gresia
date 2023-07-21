@@ -1,16 +1,16 @@
 import Image from "next/image";
 import style from "./landing.module.css";
 import aboutSvg from "../public/AboutUs.svg";
+import bg from "@/public/homeImg1.jpg";
 
 export default function Home() {
   return (
     <div className="grid gap-8">
       <section
-        className={`grid p-28 h-max ${style.bgMask}`}
+        className={`grid p-2 md:p-28 h-max`}
         style={{
           height: "30rem",
-          backgroundImage:
-            "url(https://gresianepal.com/static/media/img3.1c8e447052a36a86ead0.jpg)",
+          backgroundImage: `url(${bg.src})`,
           backgroundSize: "cover",
           backgroundAttachment: "fixed",
           backgroundPosition: "center",
@@ -37,13 +37,13 @@ export default function Home() {
           Hands
         </span>
       </section>
-      <section>
+      <section id="About">
         <h1
           className="grid text-5xl place-content-center font-semibold text-blue-700"
           aria-label="About">
           About Us
         </h1>
-        <div className="grid grid-cols-2 pl-20 pr-20">
+        <div className="grid md:grid-cols-2 pl-20 pr-20">
           <Image priority src={aboutSvg} alt="More about us" />
           <p
             className=" pt-24 align-middle text-center flex flex-wrap h-4 gap-12 justify-center"
@@ -65,7 +65,7 @@ export default function Home() {
             us with detailed insights into our financial performance, enabling
             us to quickly identify areas for improvement and take proactive
             steps.
-            <button className=" bg-green-500 w-48 p-2 rounded text-white span col-start-2  ">
+            <button className=" bg-green-500 w-48 p-2 rounded text-white span col-start-2">
               Read More About Us
             </button>
           </p>
