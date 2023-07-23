@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   BsLinkedin,
@@ -16,7 +17,7 @@ const Contact = () => {
       <section
         aria-label="Social Links"
         className="grid grid-cols-4 place-content-center">
-        <a href={mapLink} target="_blank">
+        <Link href={mapLink} target="_blank">
           <div className={socialsStyle}>
             <div className="grid place-content-center">
               <div className=" flex flex-wrap gap-1">
@@ -25,8 +26,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href={mapLink} target="_blank">
+        </Link>
+        <Link href={mapLink} target="_blank">
           <div className={socialsStyle}>
             <div className="grid place-content-center">
               <div className=" flex flex-wrap gap-1">
@@ -34,8 +35,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href={mapLink} target="_blank">
+        </Link>
+        <Link href={mapLink} target="_blank">
           <div className={socialsStyle}>
             <div className="grid place-content-center">
               <div className=" flex flex-wrap gap-1">
@@ -43,8 +44,8 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href={mapLink} target="_blank">
+        </Link>
+        <Link href={mapLink} target="_blank">
           <div
             className={
               "p-8 place-self-center text-center font-semibold hover:text-blue-500 transition-all"
@@ -55,7 +56,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </section>
       <section
         aria-label="Contact Form"
