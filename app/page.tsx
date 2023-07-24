@@ -1,7 +1,6 @@
 import Image from "next/image";
 import style from "./landing.module.css";
 import aboutSvg from "../public/AboutUs.svg";
-import bg from "@/public/homeImg1.jpg";
 import Navbar from "@/app/_navbar/navbar";
 
 export default function Home() {
@@ -13,7 +12,7 @@ export default function Home() {
           className={`grid p-2 md:p-28 h-max`}
           style={{
             height: "30rem",
-            backgroundImage: `url(${bg.src})`,
+            backgroundImage: `url(/homeImg1.jpg)`,
             backgroundSize: "cover",
             backgroundAttachment: "fixed",
             backgroundPosition: "center",
