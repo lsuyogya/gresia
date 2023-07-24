@@ -1,4 +1,5 @@
 import React from "react";
+import withAuth from "@/app/_components/_auth/withAdminPrivateRoute";
 const AdminLogin = () => {
   type contactData = {
     id: number;
@@ -87,4 +88,4 @@ const AdminLogin = () => {
   );
 };
 
-export default AdminLogin;
+export default withAuth(AdminLogin);

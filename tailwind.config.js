@@ -5,6 +5,13 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
-  plugins: [require("@tailwindcss/line-clamp")],
+  theme: {
+    extend: {
+      spacing: {
+        "250px": "250px",
+        "29px": "29px",
+      },
+    },
+  },
+  plugins: [],
 };

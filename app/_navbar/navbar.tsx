@@ -129,10 +129,10 @@ export default function Navbar() {
               </span>
               {serviceModal ? (
                 <div
-                  className=" absolute bg-gray-700 p-4 w-max text-white z-10"
-                  style={{ transform: "translate(-250px, 29px)" }}
+                  className=" absolute bg-gray-700 p-4 w-max text-white z-10 md:-translate-x-250px md:translate-y-29px"
+                  // style={{ transform: "translate(-250px, 29px)" }}
                   onMouseLeave={() => setServiceModal(false)}>
-                  <div className="grid grid-cols-4 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-4  gap-6">
                     {Services.map((service) => (
                       <div className="" key={service.name}>
                         <div className="w-full border-b-2 border-blue-500">

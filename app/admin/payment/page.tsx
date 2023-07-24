@@ -1,4 +1,7 @@
+"use client";
 import React from "react";
+import WithAdminPrivateRoute from "@/app/_components/_auth/withAdminPrivateRoute";
+
 const AdminLogin = () => {
   type paymentData = {
     name: string;
@@ -154,4 +157,5 @@ const AdminLogin = () => {
   );
 };
 
-export default AdminLogin;
+// export default AdminLogin;
+export default WithAdminPrivateRoute(AdminLogin);
